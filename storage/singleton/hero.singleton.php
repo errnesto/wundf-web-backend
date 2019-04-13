@@ -1,13 +1,36 @@
 <?php
  return array (
-  'name' => 'news',
-  'label' => 'News',
-  '_id' => 'news5c90eb3d8093e',
+  'name' => 'hero',
+  'label' => 'hero',
+  '_id' => 'hero5cb1f2bb53a4a',
   'fields' => 
   array (
     0 => 
     array (
-      'name' => 'title',
+      'name' => 'buzzwords',
+      'label' => '',
+      'type' => 'repeater',
+      'default' => '',
+      'info' => '',
+      'group' => '',
+      'localize' => false,
+      'options' => 
+      array (
+        'field' => 
+        array (
+          'type' => 'text',
+          'label' => 'Word',
+        ),
+      ),
+      'width' => '1-1',
+      'lst' => true,
+      'acl' => 
+      array (
+      ),
+    ),
+    1 => 
+    array (
+      'name' => 'phoneNumber',
       'label' => '',
       'type' => 'text',
       'default' => '',
@@ -23,68 +46,29 @@
       array (
       ),
     ),
-    1 => 
-    array (
-      'name' => 'date',
-      'label' => '',
-      'type' => 'date',
-      'default' => '',
-      'info' => '',
-      'group' => '',
-      'localize' => false,
-      'options' => 
-      array (
-        'format' => '',
-      ),
-      'width' => '1-1',
-      'lst' => true,
-      'acl' => 
-      array (
-      ),
-      'required' => true,
-    ),
     2 => 
     array (
-      'name' => 'link',
+      'name' => 'mail',
       'label' => '',
-      'type' => 'set',
+      'type' => 'text',
       'default' => '',
       'info' => '',
       'group' => '',
       'localize' => false,
       'options' => 
       array (
-        'fields' => 
-        array (
-          0 => 
-          array (
-            'type' => 'text',
-            'name' => 'label',
-          ),
-          1 => 
-          array (
-            'type' => 'text',
-            'name' => 'url',
-            'options' => 
-            array (
-              'placeholder' => 'https://',
-              'pattern' => 'https?://.+',
-            ),
-          ),
-        ),
       ),
       'width' => '1-1',
       'lst' => true,
       'acl' => 
       array (
       ),
-      'required' => true,
     ),
     3 => 
     array (
-      'name' => 'image',
+      'name' => 'address',
       'label' => '',
-      'type' => 'image',
+      'type' => 'text',
       'default' => '',
       'info' => '',
       'group' => '',
@@ -97,19 +81,20 @@
       'acl' => 
       array (
       ),
-      'required' => true,
     ),
     4 => 
     array (
-      'name' => 'text',
+      'name' => 'addressURL',
       'label' => '',
-      'type' => 'textarea',
+      'type' => 'text',
       'default' => '',
       'info' => '',
       'group' => '',
       'localize' => false,
       'options' => 
       array (
+        'placeholder' => 'https://',
+        'pattern' => 'https?://.+',
       ),
       'width' => '1-1',
       'lst' => true,
@@ -118,35 +103,16 @@
       ),
     ),
   ),
-  'sortable' => false,
-  'in_menu' => false,
-  '_created' => 1553001277,
-  '_modified' => 1555184437,
-  'color' => '',
+  'template' => '',
+  'data' => NULL,
+  '_created' => 1555165883,
+  '_modified' => 1555183737,
+  'description' => '',
   'acl' => 
   array (
     'public' => 
     array (
-      'entries_view' => true,
-    ),
-  ),
-  'rules' => 
-  array (
-    'create' => 
-    array (
-      'enabled' => false,
-    ),
-    'read' => 
-    array (
-      'enabled' => false,
-    ),
-    'update' => 
-    array (
-      'enabled' => false,
-    ),
-    'delete' => 
-    array (
-      'enabled' => false,
+      'data' => true,
     ),
   ),
 );
