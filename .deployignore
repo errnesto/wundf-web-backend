@@ -1,0 +1,16 @@
+.DS_Store
+.gitignore
+.git/
+.deployignore
+deploy.sh
+Dockerfile
+LICENSE
+README.md
+CONTRIBUTING.md
+package.json
+storage/data/
+storage/cache/
+storage/tmp/
+storage/uploads/
+storage/thumbs/
+
