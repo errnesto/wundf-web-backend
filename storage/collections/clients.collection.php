@@ -1,13 +1,13 @@
 <?php
  return array (
-  'name' => 'news',
-  'label' => 'News',
-  '_id' => 'news5c90eb3d8093e',
+  'name' => 'clients',
+  'label' => 'clients',
+  '_id' => 'clients5cc866a84fd6b',
   'fields' => 
   array (
     0 => 
     array (
-      'name' => 'title',
+      'name' => 'name',
       'label' => '',
       'type' => 'text',
       'default' => '',
@@ -22,37 +22,19 @@
       'acl' => 
       array (
       ),
+      'required' => true,
     ),
     1 => 
     array (
-      'name' => 'link',
+      'name' => 'logo',
       'label' => '',
-      'type' => 'set',
+      'type' => 'asset',
       'default' => '',
       'info' => '',
       'group' => '',
       'localize' => false,
       'options' => 
       array (
-        'fields' => 
-        array (
-          0 => 
-          array (
-            'type' => 'text',
-            'name' => 'label',
-          ),
-          1 => 
-          array (
-            'type' => 'text',
-            'name' => 'url',
-            'options' => 
-            array (
-              'placeholder' => 'https://',
-              'pattern' => 'https?://.+',
-            ),
-          ),
-        ),
-        'display' => '',
       ),
       'width' => '1-1',
       'lst' => true,
@@ -63,15 +45,17 @@
     ),
     2 => 
     array (
-      'name' => 'image',
+      'name' => 'relativeSize',
       'label' => '',
-      'type' => 'image',
+      'type' => 'text',
       'default' => '',
       'info' => '',
       'group' => '',
       'localize' => false,
       'options' => 
       array (
+        'type' => 'number',
+        'default' => 1,
       ),
       'width' => '1-1',
       'lst' => true,
@@ -80,29 +64,11 @@
       ),
       'required' => true,
     ),
-    3 => 
-    array (
-      'name' => 'text',
-      'label' => '',
-      'type' => 'textarea',
-      'default' => '',
-      'info' => '',
-      'group' => '',
-      'localize' => false,
-      'options' => 
-      array (
-      ),
-      'width' => '1-1',
-      'lst' => true,
-      'acl' => 
-      array (
-      ),
-    ),
   ),
   'sortable' => true,
-  'in_menu' => true,
-  '_created' => 1553001277,
-  '_modified' => 1556620286,
+  'in_menu' => false,
+  '_created' => 1556637352,
+  '_modified' => 1556648021,
   'color' => '',
   'acl' => 
   array (
@@ -130,9 +96,5 @@
       'enabled' => false,
     ),
   ),
-  'contentpreview' => 
-  array (
-    'enabled' => false,
-  ),
-  'icon' => 'newspaper.svg',
+  'icon' => 'buildings.svg',
 );

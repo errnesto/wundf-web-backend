@@ -1,8 +1,8 @@
 <?php
  return array (
-  'name' => 'news',
-  'label' => 'News',
-  '_id' => 'news5c90eb3d8093e',
+  'name' => 'work',
+  'label' => 'Work',
+  '_id' => 'work5cc823c338cb8',
   'fields' => 
   array (
     0 => 
@@ -22,37 +22,47 @@
       'acl' => 
       array (
       ),
+      'required' => true,
     ),
     1 => 
     array (
-      'name' => 'link',
+      'name' => 'image',
       'label' => '',
-      'type' => 'set',
+      'type' => 'image',
       'default' => '',
       'info' => '',
       'group' => '',
       'localize' => false,
       'options' => 
       array (
-        'fields' => 
+        'meta' => 
         array (
-          0 => 
+          'description' => 
           array (
             'type' => 'text',
-            'name' => 'label',
+            'label' => 'Description',
           ),
-          1 => 
+          'attribution' => 
           array (
             'type' => 'text',
-            'name' => 'url',
-            'options' => 
-            array (
-              'placeholder' => 'https://',
-              'pattern' => 'https?://.+',
-            ),
+            'label' => 'Attribution',
+          ),
+          'attributionURL' => 
+          array (
+            'type' => 'text',
+            'label' => 'Attribution URL',
+          ),
+          'license' => 
+          array (
+            'type' => 'text',
+            'label' => 'Licence',
+          ),
+          'licenseURL' => 
+          array (
+            'type' => 'text',
+            'label' => 'Licence URL',
           ),
         ),
-        'display' => '',
       ),
       'width' => '1-1',
       'lst' => true,
@@ -63,9 +73,9 @@
     ),
     2 => 
     array (
-      'name' => 'image',
+      'name' => 'teaserText',
       'label' => '',
-      'type' => 'image',
+      'type' => 'textarea',
       'default' => '',
       'info' => '',
       'group' => '',
@@ -84,7 +94,7 @@
     array (
       'name' => 'text',
       'label' => '',
-      'type' => 'textarea',
+      'type' => 'markdown',
       'default' => '',
       'info' => '',
       'group' => '',
@@ -97,12 +107,13 @@
       'acl' => 
       array (
       ),
+      'required' => true,
     ),
   ),
   'sortable' => true,
   'in_menu' => true,
-  '_created' => 1553001277,
-  '_modified' => 1556620286,
+  '_created' => 1556620227,
+  '_modified' => 1556621426,
   'color' => '',
   'acl' => 
   array (
@@ -130,9 +141,5 @@
       'enabled' => false,
     ),
   ),
-  'contentpreview' => 
-  array (
-    'enabled' => false,
-  ),
-  'icon' => 'newspaper.svg',
+  'icon' => 'business.svg',
 );

@@ -1,13 +1,13 @@
 <?php
  return array (
-  'name' => 'news',
-  'label' => 'News',
-  '_id' => 'news5c90eb3d8093e',
+  'name' => 'creatives',
+  'label' => '',
+  '_id' => 'creatives5cb5ecaddbc38',
   'fields' => 
   array (
     0 => 
     array (
-      'name' => 'title',
+      'name' => 'name',
       'label' => '',
       'type' => 'text',
       'default' => '',
@@ -25,44 +25,6 @@
     ),
     1 => 
     array (
-      'name' => 'link',
-      'label' => '',
-      'type' => 'set',
-      'default' => '',
-      'info' => '',
-      'group' => '',
-      'localize' => false,
-      'options' => 
-      array (
-        'fields' => 
-        array (
-          0 => 
-          array (
-            'type' => 'text',
-            'name' => 'label',
-          ),
-          1 => 
-          array (
-            'type' => 'text',
-            'name' => 'url',
-            'options' => 
-            array (
-              'placeholder' => 'https://',
-              'pattern' => 'https?://.+',
-            ),
-          ),
-        ),
-        'display' => '',
-      ),
-      'width' => '1-1',
-      'lst' => true,
-      'acl' => 
-      array (
-      ),
-      'required' => true,
-    ),
-    2 => 
-    array (
       'name' => 'image',
       'label' => '',
       'type' => 'image',
@@ -72,19 +34,31 @@
       'localize' => false,
       'options' => 
       array (
+        'meta' => 
+        array (
+          'description' => 
+          array (
+            'type' => 'text',
+            'label' => 'Description',
+          ),
+          'align' => 
+          array (
+            'type' => 'text',
+            'label' => 'Alignment',
+          ),
+        ),
       ),
       'width' => '1-1',
       'lst' => true,
       'acl' => 
       array (
       ),
-      'required' => true,
     ),
-    3 => 
+    2 => 
     array (
       'name' => 'text',
       'label' => '',
-      'type' => 'textarea',
+      'type' => 'markdown',
       'default' => '',
       'info' => '',
       'group' => '',
@@ -101,8 +75,8 @@
   ),
   'sortable' => true,
   'in_menu' => true,
-  '_created' => 1553001277,
-  '_modified' => 1556620286,
+  '_created' => 1555426477,
+  '_modified' => 1556620275,
   'color' => '',
   'acl' => 
   array (
@@ -130,9 +104,5 @@
       'enabled' => false,
     ),
   ),
-  'contentpreview' => 
-  array (
-    'enabled' => false,
-  ),
-  'icon' => 'newspaper.svg',
+  'icon' => 'party.svg',
 );
