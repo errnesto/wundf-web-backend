@@ -8,7 +8,7 @@
     0 => 
     array (
       'name' => 'buzzwords',
-      'label' => '',
+      'label' => 'Word',
       'type' => 'repeater',
       'default' => '',
       'info' => '',
@@ -19,6 +19,8 @@
         'field' => 
         array (
           'type' => 'text',
+          'name' => 'word',
+          'display' => 'word',
           'label' => 'Word',
         ),
       ),
@@ -106,7 +108,7 @@
   'template' => '',
   'data' => NULL,
   '_created' => 1555165883,
-  '_modified' => 1555183737,
+  '_modified' => 1555272883,
   'description' => '',
   'acl' => 
   array (
