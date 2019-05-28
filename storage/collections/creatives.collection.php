@@ -27,7 +27,7 @@
     array (
       'name' => 'image',
       'label' => '',
-      'type' => 'image',
+      'type' => 'asset',
       'default' => '',
       'info' => '',
       'group' => '',
@@ -76,7 +76,7 @@
   'sortable' => true,
   'in_menu' => true,
   '_created' => 1555426477,
-  '_modified' => 1556620275,
+  '_modified' => 1556657344,
   'color' => '',
   'acl' => 
   array (

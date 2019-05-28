@@ -36,7 +36,7 @@
       'options' => 
       array (
       ),
-      'width' => '1-1',
+      'width' => '1-2',
       'lst' => true,
       'acl' => 
       array (
@@ -56,8 +56,9 @@
       array (
         'type' => 'number',
         'default' => 1,
+        'step' => 0.1,
       ),
-      'width' => '1-1',
+      'width' => '1-2',
       'lst' => true,
       'acl' => 
       array (
@@ -68,7 +69,7 @@
   'sortable' => true,
   'in_menu' => false,
   '_created' => 1556637352,
-  '_modified' => 1556648021,
+  '_modified' => 1556705667,
   'color' => '',
   'acl' => 
   array (
@@ -85,7 +86,7 @@
     ),
     'read' => 
     array (
-      'enabled' => false,
+      'enabled' => true,
     ),
     'update' => 
     array (

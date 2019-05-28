@@ -78,7 +78,7 @@
       'options' => 
       array (
       ),
-      'width' => '1-1',
+      'width' => '1-2',
       'lst' => true,
       'acl' => 
       array (
@@ -98,7 +98,7 @@
         'placeholder' => 'https://',
         'pattern' => 'https?://.+',
       ),
-      'width' => '1-1',
+      'width' => '1-2',
       'lst' => true,
       'acl' => 
       array (
@@ -108,7 +108,7 @@
   'template' => '',
   'data' => NULL,
   '_created' => 1555165883,
-  '_modified' => 1555272883,
+  '_modified' => 1556703909,
   'description' => '',
   'acl' => 
   array (

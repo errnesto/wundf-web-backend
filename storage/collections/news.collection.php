@@ -55,7 +55,7 @@
         'display' => '',
       ),
       'width' => '1-1',
-      'lst' => true,
+      'lst' => false,
       'acl' => 
       array (
       ),
@@ -65,7 +65,7 @@
     array (
       'name' => 'image',
       'label' => '',
-      'type' => 'image',
+      'type' => 'asset',
       'default' => '',
       'info' => '',
       'group' => '',
@@ -93,7 +93,7 @@
       array (
       ),
       'width' => '1-1',
-      'lst' => true,
+      'lst' => false,
       'acl' => 
       array (
       ),
@@ -102,7 +102,7 @@
   'sortable' => true,
   'in_menu' => true,
   '_created' => 1553001277,
-  '_modified' => 1556620286,
+  '_modified' => 1556702650,
   'color' => '',
   'acl' => 
   array (

@@ -28,43 +28,15 @@
     array (
       'name' => 'image',
       'label' => '',
-      'type' => 'image',
+      'type' => 'asset',
       'default' => '',
       'info' => '',
       'group' => '',
       'localize' => false,
       'options' => 
       array (
-        'meta' => 
-        array (
-          'description' => 
-          array (
-            'type' => 'text',
-            'label' => 'Description',
-          ),
-          'attribution' => 
-          array (
-            'type' => 'text',
-            'label' => 'Attribution',
-          ),
-          'attributionURL' => 
-          array (
-            'type' => 'text',
-            'label' => 'Attribution URL',
-          ),
-          'license' => 
-          array (
-            'type' => 'text',
-            'label' => 'Licence',
-          ),
-          'licenseURL' => 
-          array (
-            'type' => 'text',
-            'label' => 'Licence URL',
-          ),
-        ),
       ),
-      'width' => '1-1',
+      'width' => '1-2',
       'lst' => true,
       'acl' => 
       array (
@@ -72,6 +44,62 @@
       'required' => true,
     ),
     2 => 
+    array (
+      'name' => 'imageAttribution',
+      'label' => '',
+      'type' => 'set',
+      'default' => '',
+      'info' => '',
+      'group' => '',
+      'localize' => false,
+      'options' => 
+      array (
+        'fields' => 
+        array (
+          0 => 
+          array (
+            'name' => 'license',
+            'type' => 'text',
+            'options' => 
+            array (
+              'default' => 'CC BY-SA 2.0',
+            ),
+          ),
+          1 => 
+          array (
+            'name' => 'licenseURL',
+            'type' => 'text',
+            'options' => 
+            array (
+              'placeholder' => 'https://',
+              'pattern' => 'https?://.+',
+              'default' => 'https://creativecommons.org/licenses/by-sa/2.0/',
+            ),
+          ),
+          2 => 
+          array (
+            'name' => 'text',
+            'type' => 'text',
+          ),
+          3 => 
+          array (
+            'name' => 'sourceURL',
+            'type' => 'text',
+            'options' => 
+            array (
+              'placeholder' => 'https://',
+              'pattern' => 'https?://.+',
+            ),
+          ),
+        ),
+      ),
+      'width' => '1-2',
+      'lst' => false,
+      'acl' => 
+      array (
+      ),
+    ),
+    3 => 
     array (
       'name' => 'teaserText',
       'label' => '',
@@ -83,18 +111,18 @@
       'options' => 
       array (
       ),
-      'width' => '1-1',
-      'lst' => true,
+      'width' => '1-2',
+      'lst' => false,
       'acl' => 
       array (
       ),
       'required' => true,
     ),
-    3 => 
+    4 => 
     array (
-      'name' => 'text',
+      'name' => 'linkText',
       'label' => '',
-      'type' => 'markdown',
+      'type' => 'text',
       'default' => '',
       'info' => '',
       'group' => '',
@@ -102,8 +130,30 @@
       'options' => 
       array (
       ),
+      'width' => '1-2',
+      'lst' => false,
+      'acl' => 
+      array (
+      ),
+    ),
+    5 => 
+    array (
+      'name' => 'content',
+      'label' => '',
+      'type' => 'layout',
+      'default' => '',
+      'info' => '',
+      'group' => '',
+      'localize' => false,
+      'options' => 
+      array (
+        'enabled' => 
+        array (
+          0 => 'text',
+        ),
+      ),
       'width' => '1-1',
-      'lst' => true,
+      'lst' => false,
       'acl' => 
       array (
       ),
@@ -113,7 +163,7 @@
   'sortable' => true,
   'in_menu' => true,
   '_created' => 1556620227,
-  '_modified' => 1556621426,
+  '_modified' => 1559056579,
   'color' => '',
   'acl' => 
   array (
