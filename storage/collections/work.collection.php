@@ -3,9 +3,9 @@
   'name' => 'work',
   'label' => 'Work',
   '_id' => 'work5cc823c338cb8',
-  'fields' => 
+  'fields' =>
   array (
-    0 => 
+    0 =>
     array (
       'name' => 'title',
       'label' => '',
@@ -14,17 +14,17 @@
       'info' => '',
       'group' => '',
       'localize' => false,
-      'options' => 
+      'options' =>
       array (
       ),
       'width' => '1-1',
       'lst' => true,
-      'acl' => 
+      'acl' =>
       array (
       ),
       'required' => true,
     ),
-    1 => 
+    1 =>
     array (
       'name' => 'image',
       'label' => '',
@@ -33,73 +33,17 @@
       'info' => '',
       'group' => '',
       'localize' => false,
-      'options' => 
+      'options' =>
       array (
       ),
       'width' => '1-2',
       'lst' => true,
-      'acl' => 
+      'acl' =>
       array (
       ),
       'required' => true,
     ),
-    2 => 
-    array (
-      'name' => 'imageAttribution',
-      'label' => '',
-      'type' => 'set',
-      'default' => '',
-      'info' => '',
-      'group' => '',
-      'localize' => false,
-      'options' => 
-      array (
-        'fields' => 
-        array (
-          0 => 
-          array (
-            'name' => 'license',
-            'type' => 'text',
-            'options' => 
-            array (
-              'default' => 'CC BY-SA 2.0',
-            ),
-          ),
-          1 => 
-          array (
-            'name' => 'licenseURL',
-            'type' => 'text',
-            'options' => 
-            array (
-              'placeholder' => 'https://',
-              'pattern' => 'https?://.+',
-              'default' => 'https://creativecommons.org/licenses/by-sa/2.0/',
-            ),
-          ),
-          2 => 
-          array (
-            'name' => 'text',
-            'type' => 'text',
-          ),
-          3 => 
-          array (
-            'name' => 'sourceURL',
-            'type' => 'text',
-            'options' => 
-            array (
-              'placeholder' => 'https://',
-              'pattern' => 'https?://.+',
-            ),
-          ),
-        ),
-      ),
-      'width' => '1-2',
-      'lst' => false,
-      'acl' => 
-      array (
-      ),
-    ),
-    3 => 
+    2 =>
     array (
       'name' => 'teaserText',
       'label' => '',
@@ -108,17 +52,17 @@
       'info' => '',
       'group' => '',
       'localize' => false,
-      'options' => 
+      'options' =>
       array (
       ),
       'width' => '1-2',
       'lst' => false,
-      'acl' => 
+      'acl' =>
       array (
       ),
       'required' => true,
     ),
-    4 => 
+    3 =>
     array (
       'name' => 'linkText',
       'label' => '',
@@ -127,34 +71,35 @@
       'info' => '',
       'group' => '',
       'localize' => false,
-      'options' => 
+      'options' =>
       array (
       ),
       'width' => '1-2',
       'lst' => false,
-      'acl' => 
+      'acl' =>
       array (
       ),
     ),
-    5 => 
+    4 =>
     array (
       'name' => 'content',
       'label' => '',
-      'type' => 'layout',
+      'type' => 'repeater',
       'default' => '',
       'info' => '',
       'group' => '',
       'localize' => false,
-      'options' => 
+      'options' =>
       array (
-        'enabled' => 
-        array (
-          0 => 'text',
-        ),
+        'fields' => array (
+          0 => array('type' => 'markdown', 'name' => 'markdown', 'label' => 'Text'),
+          1 => array('type' => 'asset', 'name' => 'image', 'label' => 'Image'),
+          2 => array('type' => 'text', 'name' => 'title', 'label' => 'Title')
+        )
       ),
       'width' => '1-1',
       'lst' => false,
-      'acl' => 
+      'acl' =>
       array (
       ),
       'required' => true,
@@ -165,28 +110,28 @@
   '_created' => 1556620227,
   '_modified' => 1559056579,
   'color' => '',
-  'acl' => 
+  'acl' =>
   array (
-    'public' => 
+    'public' =>
     array (
       'entries_view' => true,
     ),
   ),
-  'rules' => 
+  'rules' =>
   array (
-    'create' => 
+    'create' =>
     array (
       'enabled' => false,
     ),
-    'read' => 
+    'read' =>
     array (
       'enabled' => false,
     ),
-    'update' => 
+    'update' =>
     array (
       'enabled' => false,
     ),
-    'delete' => 
+    'delete' =>
     array (
       'enabled' => false,
     ),
