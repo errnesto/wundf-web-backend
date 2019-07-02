@@ -94,7 +94,7 @@
         'fields' => array (
           0 => array('type' => 'markdown', 'name' => 'markdown', 'label' => 'Text'),
           1 => array('type' => 'asset', 'name' => 'image', 'label' => 'Image'),
-          2 => array('type' => 'text', 'name' => 'title', 'label' => 'Title')
+          2 => array('type' => 'text', 'name' => 'title', 'label' => 'Heading')
         )
       ),
       'width' => '1-1',
